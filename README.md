@@ -16,10 +16,32 @@ O site das Casas Bahia apresenta entre os primeiros 20 resultados apenas celular
 ## Funcionalidades
 ### Etapas do Projeto:
 1. **Coleta de dados**
-- Coleta os primeiros 20 celulares do site das Casas Bahia e os 91 do site da Americanas.
-- Salva os dados em duas tabelas, uma para cada site.
+- Coleta os primeiros 20 celulares do site das Casas Bahia e os 91 do site da Americanas, utilizando playwright.
+- Salva os dados em duas tabelas, uma para cada site, por meio do uso de pandas.
 2. **Tratamento dos dados**
-- Um script adiciona a coluna "marca" nas tabelas.
-3. **Comparação entre sites**
-- Outro script junta as tabelas com os dados da Casas Bahia e os 20 primeiros celulares da Samsung ou Motorola da Americanas.
-- Esse script calcula e compara os preços médios por marca entre os dois sites, utilizando sqlite3 e pandas. 
+- Um script adiciona a coluna "marca" nas tabelas, usando pandas.
+3. **Comparação entre os preços médios**
+- Um script junta as tabelas com os dados da Casas Bahia e os 20 primeiros celulares da Samsung ou Motorola da Americanas.
+- Esse programa calcula e compara os preços médios por marca entre os dois sites, utilizando sqlite3 e pandas.
+- Outro script faz um gráfico de barras comparando o preço por marca, utilizando pandas, matplotlib e seaborn.
+4. **Comparação entre as frequências das marcas**
+- Sabendo que os primeiros 20 celulares da Casas Bahia são ou da Samsung ou da Motorola, esse script compara a frequência das marcas a qual os consumidores são expostos entre os primeiros 20 desse site e os primeiros 20 das mesmas marcas da Americanas.
+- Gera gráficos para ilustrar essa distribuição de visibilidadde.
+5. **Análise aprofundada dos dados da Americanas**
+  - Cria:
+    - Gráfico de pizza com a proporção das marcas.
+    - Gráfico de dispersão com os preços individuais.
+    - Boxplot com distribuição de preços.
+
+## Organização dos arquivos
+- celulares_comparacoes.py - coleta os dados da Casas Bahia e da Americanas.
+- identificador_marcas_americanas.py - adiciona a coluna "marca" aos produtos da Americanas.
+- identificador_marcas_casasbahia.py - adiciona a coluna "marca" aos produtos da Casas Bahia.
+- comparativo_marcas_sites_media.py - compara os preços médios das marcas nos dois sites.
+- comparativo_marcas_sites_total.py - compara a frequência das marcas nos dois sites.
+- media_precos_grafico_comparacao.py - forma o gráfico de barras comparando o preço médio.
+- total_precos_grafico_comparacao.py - forma o gráfico de barras comparando a frequência das marcas.
+- pizza_marcas_americanas.py - forma o gráfico de pizza com a proporção das  marcas entre os celulares da Americanas.
+- dispersao_precos_americanas.py - forma o gráfico de dispersão de preços da Americanas.
+- boxplot_precos_americanas.py - forma o boxplot dos preços da Americanas.
+- Tabelas ".csv" e Gráficos ".png" estão disponíveis no repositório 
