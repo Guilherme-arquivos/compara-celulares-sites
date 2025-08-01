@@ -20,6 +20,6 @@ O site das Casas Bahia apresenta entre os primeiros 20 resultados apenas celular
 - Salva os dados em duas tabelas, uma para cada site.
 2.**Tratamento dos dados**
 - Um script adiciona a coluna "marca" nas tabelas.
-3. **Comparação entre sites**
+3.**Comparação entre sites**
 - Outro script junta as tabelas com os dados da Casas Bahia e os 20 primeiros celulares da Samsung ou Motorola da Americanas.
 - Esse script calcula e compara os preços médios por marca entre os dois sites, utilizando sqlite3 e pandas. 
