@@ -45,3 +45,7 @@ O site das Casas Bahia apresenta entre os primeiros 20 resultados apenas celular
 - dispersao_precos_americanas.py - forma o gráfico de dispersão de preços da Americanas.
 - boxplot_precos_americanas.py - forma o boxplot dos preços da Americanas.
 - Tabelas ".csv" e Gráficos ".png" estão disponíveis no repositório 
+
+## Como executar
+- Tenha Python instalado.
+- Instale as dependências.
